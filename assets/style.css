@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    border: 2.5px solid #fff;
+    background-color: #0d6efd;
+    border-radius: 50px;
+}
+
+/* Nav */
+.logo{
+    font: 800 1.8em 'Outfit', sans-serif;
+    color: rgb(229, 229, 229);
+}
+nav, .buttons, img{
+    user-select: none;
+}
+.navbar-toggler{
+    border: none;
+    padding: 0;
+}
+.navbar-toggler:focus-visible{
+    visibility: hidden;
+}
+.burger{
+    color: white;
+    font-size: 1.2em;
+}
+.nav-link{
+    font-family: 'Outfit', sans-serif;
+    color: rgb(216, 213, 213);
+}
+nav button{
+    margin-left: 15px
+}
+button{
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: .9px;
+}
+/* Hero */
+.hero{
+    padding: 120px 0 !important;
+}
+.mobile{
+    display: none !important;
+}
+.hero h1{
+    font-size: calc(1.675rem + 1.5vw);
+    font-family: 'Outfit', sans-serif;
+}
+.edward{
+    max-width: 380px;
+    border-radius: 20px;
+}
+
+/* About */
+#about{
+    padding: 90px 0;
+    font-family: 'Outfit', sans-serif;
+}
+#about h1{
+    font-size: 1.7rem
+}
+#about p{
+    width: 90%;
+    font-size: .95rem;
+}
+
+/* Contact */
+#contact{
+    padding: 90px 0 !important;
+}
+#contact img{
+    width: 100%;
+    max-width: 420px;
+}
+input,textarea{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300 !important;
+}
+form input{
+    border-radius: 50px !important;
+}
+form button{
+    border-radius: 30px !important;
+}
+form textarea{
+    resize: none;
+    height: 150px;
+    border-radius: 20px !important;
+}
+form textarea::-webkit-scrollbar{
+    display: none;
+}
+
+/* Footer */
+footer{
+    user-select: none;
+    line-height: 1;
+}
+footer p{
+    font-weight: 200;
+    font-family: 'Outfit', sans-serif;
+}
+footer p:nth-child(2){
+    font-size: .98rem !important;
+    color: rgb(217, 217, 217)
+}
+@media(max-width: 991px){
+    form{
+        text-align: center;
+    }
+    #contact .mobile{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    #contact .desktop{
+        display: none !important;
+    }
+}
+@media(max-width: 767px){
+    .hero .row .col-md{
+        align-items: center;
+        text-align: center;
+        gap: 15px
+    }
+    .mobile{
+        display: flex !important;
+        margin: 0 0 30px 0;
+        justify-content: center !important;
+    }
+    .mobile .edward{
+        width: 100%;
+    }
+    .desktop{
+        display: none !important;
+    }
+    .hero{
+        padding: 120px 0 90px !important;
+    }
+    .edward{
+        max-width: 350px;
+    }
+    #about{
+        text-align: center;
+    }
+    #about button{
+        margin-top: 15px
+    }
+    #about p{
+        text-align: left;
+        margin: 0 auto;
+    }
+    #contact, #about{
+        padding: 40px 0 !important;
+    }
+}
+@media(max-width: 576px){
+    .nav-item button{
+        margin: 0 0 10px 20px !important;
+    }
+    
+}
