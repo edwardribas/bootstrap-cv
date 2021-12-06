@@ -33,9 +33,10 @@ nav, .buttons, img{
 .nav-link{
     font-family: 'Outfit', sans-serif;
     color: rgb(216, 213, 213);
+    font-size: .9rem !important;
 }
 nav button{
-    margin-left: 15px
+    margin-left: 15px;
 }
 button{
     font-family: 'Outfit', sans-serif;
@@ -53,8 +54,11 @@ button{
     font-family: 'Outfit', sans-serif;
 }
 .edward{
-    max-width: 380px;
+    max-width: 340px;
     border-radius: 20px;
+}
+.mobile{
+    max-width: 280px;
 }
 
 /* About */
@@ -63,7 +67,7 @@ button{
     font-family: 'Outfit', sans-serif;
 }
 #about h1{
-    font-size: 1.7rem
+    font-size: 1.7rem;
 }
 #about p{
     width: 90%;
@@ -82,16 +86,21 @@ input,textarea{
     font-family: 'Outfit', sans-serif;
     font-weight: 300 !important;
 }
+.form-group{
+    max-width: 600px;
+    width: 90% !important;
+}
 form input{
-    border-radius: 50px !important;
+    border-radius: 10px !important;
 }
 form button{
-    border-radius: 30px !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
 }
 form textarea{
     resize: none;
     height: 150px;
-    border-radius: 20px !important;
+    border-radius: 12px !important;
 }
 form textarea::-webkit-scrollbar{
     display: none;
@@ -108,7 +117,7 @@ footer p{
 }
 footer p:nth-child(2){
     font-size: .98rem !important;
-    color: rgb(217, 217, 217)
+    color: rgba(0, 0, 0, 0.452)
 }
 @media(max-width: 991px){
     form{
@@ -121,12 +130,18 @@ footer p:nth-child(2){
     #contact .desktop{
         display: none !important;
     }
+    #contact .mobile{
+        max-width: 330px;
+    }
 }
 @media(max-width: 767px){
     .hero .row .col-md{
         align-items: center;
         text-align: center;
         gap: 15px
+    }
+    #about img{
+        max-width: 280px;
     }
     .mobile{
         display: flex !important;
